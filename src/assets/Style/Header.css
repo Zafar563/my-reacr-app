@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    background-color: #5F00FF;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+}
+.btn:hover{
+    background-color: #000000;
+}

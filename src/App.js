@@ -1,8 +1,11 @@
-import React from "react";
-import "../src/assest/Style.css";
+
+import React from 'react';
+import Home from './pages/home';
+import '../src/assets/Style/style.css'
 function App() {
   return (
     <div className="App">
+      <Home />
        </div>
   );
 }

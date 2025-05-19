@@ -1,5 +1,5 @@
-@import '../assest/Header.css'; 
-
+@import '../Style/Header.css'; 
+@import '../Style/Home.css';
 
 body {
     background-color: #f0f0f0;
@@ -13,4 +13,14 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+*{
+    box-sizing: border-box;
 }
