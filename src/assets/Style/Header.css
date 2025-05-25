@@ -1,10 +1,39 @@
 .header{
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 110px;
+  background-color: rgba(255, 255, 255, 0.05); /* 5% opacity */
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+.header-logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Paytone One', sans-serif;
 }
 .nav ul{
     display: flex;
     gap: 20px;
+}
+.nav ul li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.nav ul li a:hover{
+    color: #5F00FF;
+    text-decoration: underline;
+
+    text-underline-offset: 4px;
+    transform: scale(1.05);
 }
 .btns{
     display: flex;

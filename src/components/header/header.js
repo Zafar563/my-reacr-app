@@ -6,7 +6,7 @@ const Header = () => {
       <div className="header-start">
         <div className="container">
             <div className='header'>
-              <div className="header-logo">SOLVE</div>
+              <div className="header-logo">SOLVE.</div>
               <div className="nav">
                 <ul>
                   <li><a href="#">Home</a></li>
@@ -26,4 +26,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header ; 

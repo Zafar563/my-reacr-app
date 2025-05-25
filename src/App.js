@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Home from './pages/home';
-import '../src/assets/Style/style.css'
+import '../src/assets/Style/Style.css'
 function App() {
   return (
     <div className="App">
