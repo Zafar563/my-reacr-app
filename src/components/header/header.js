@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Header = () => {
   return (
@@ -9,10 +10,10 @@ const Header = () => {
               <div className="header-logo">SOLVE.</div>
               <div className="nav">
                 <ul>
-                  <li><a href="#">Home</a></li>
+                  <li><Link to="/">Home</Link></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Achievement</a>  </li>
-                  <li><a href="#">About Us</a></li>
+                  <li><Link to="/about">About Us</Link></li>
                 </ul>
               </div>
                 <div className="btns">
