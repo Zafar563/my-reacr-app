@@ -9,9 +9,9 @@ export default function AvatarList() {
   ];
 
   return (
-    <div className="flex -space-x-2">
+    <div className="avatars">
       {avatars.map((url, idx) => (
-        <img key={idx} src={url} alt="avatar" className="w-8 h-8 rounded-full border-2 border-white" />
+        <img key={idx} src={url} alt="avatar" />
       ))}
     </div>
   );

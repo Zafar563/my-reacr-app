@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import CardsSection from "../components/card/cardsection"
 import WhoWeAreSection from '../components/whoWeAre/whoWeAreSection';
 import HeroSection from '../components/heroSection/heroSection';
-import Tabs from '../components/heroSection/tabs';
-import PlatformDescription from '../components/heroSection/platformDescription';
+
+import Testimonial from '../components/Testimonial/testimonial';
 const Home = () => {
-      const [activeTab, setActiveTab] = useState("Company Benefit");
-
-       const tabs = ["Company Benefit", "Team Management", "Road Map"];
-
+ 
   return (
     <div className='wrapper'>
        <div className="container">
@@ -26,11 +23,14 @@ const Home = () => {
           <div className="who-we-are-section">
             <WhoWeAreSection /> 
           </div>
-            <div className="min-h-screen bg-gradient-to-br from-[#0f0c29] to-[#302b63] text-white p-6">
+            <div className="hero-section">
                    <HeroSection />
-                   <Tabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
-                   <PlatformDescription />
+                   
     </div>  
+    <div className="testimonial">
+            <Testimonial />
+          
+    </div>
        </div>
     </div>
   )
