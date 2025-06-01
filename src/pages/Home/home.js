@@ -1,9 +1,9 @@
 import React from "react";
-import CardsSection from "../components/card/cardsection"
-import WhoWeAreSection from '../components/whoWeAre/whoWeAreSection';
-import HeroSection from '../components/heroSection/heroSection';
+import CardsSection from "../../components/card/cardsection"
+import WhoWeAreSection from '../../components/whoWeAre/whoWeAreSection';
+import HeroSection from '../../components/heroSection/heroSection';
 
-import Testimonial from '../components/Testimonial/testimonial';
+import Testimonial from '../../components/Testimonial/testimonial';
 const Home = () => {
  
   return (
