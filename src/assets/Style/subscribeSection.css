@@ -1,0 +1,59 @@
+.subscribe-section {
+
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 12px;
+  margin: 80px 0 ;
+    background: linear-gradient(135deg, #3a0ca3, #050016);
+}
+
+.subscribe-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.subscribe-section p {
+  font-size: 1rem;
+  color: #bbbbbb;
+  margin-bottom: 32px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #2e2947;
+  color: #fff;
+  min-width: 260px;
+}
+
+.subscribe-form input::placeholder {
+  color: #888;
+}
+
+.subscribe-form button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5F00FF;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.subscribe-form button:hover {
+    transform: scale(1.05);
+    background-color: #4a00cc;
+}

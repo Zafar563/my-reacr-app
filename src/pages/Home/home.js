@@ -2,8 +2,9 @@ import React from "react";
 import CardsSection from "../../components/card/cardsection"
 import WhoWeAreSection from '../../components/whoWeAre/whoWeAreSection';
 import HeroSection from '../../components/heroSection/heroSection';
-
 import Testimonial from '../../components/Testimonial/testimonial';
+import SubscribeSection from '../../components/SubscribeSection/subscribeSection'; 
+import Footer from "../../components/Footer/footer";
 const Home = () => {
  
   return (
@@ -31,6 +32,13 @@ const Home = () => {
             <Testimonial />
           
     </div>
+    <div className="subscibe">
+                 <SubscribeSection />
+    </div>
+          <div className="footer">
+            <Footer />
+          </div>
+        
        </div>
     </div>
   )

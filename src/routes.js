@@ -2,6 +2,7 @@ import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Services from './pages/Services/Services';
 import Achviments from './pages/Achviments/achviments';
+
 let routes = [
     {
         id:1,
@@ -24,6 +25,7 @@ let routes = [
         path: '/about',
         component: About
     }, 
+   
     
 ]
 
