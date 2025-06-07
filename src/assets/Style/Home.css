@@ -5,111 +5,6 @@
     margin: 0;
 }
 
-.sphere {
-    
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle at 50% 30%, #fff 0%, #a855f7 50%, #1e3a8a 100%);
-    border-radius: 50%;
-    box-shadow: 0 0 100px 20px rgba(168, 85, 247, 0.5);
-    position: absolute;
-    z-index: -1;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Markazga to'g'ri joylashishi uchun */
-    animation: pulsate 5s infinite ease-in-out, colorShift 24s infinite ease-in-out;
-}
-
-.sphere::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
-    border-radius: 50%;
-
-}
-
-@keyframes pulsate {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-       
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.1);
-       
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-      
-    }
-}
-
-@keyframes colorShift {
-    0% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #a855f7 50%, #1e3a8a 100%);
-    }
-    5% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #b794f4 50%, #1e40af 100%);
-    }
-    10% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #d946ef 50%, #3b82f6 100%);
-    }
-    15% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #ec4899 50%, #1d4ed8 100%);
-    }
-    20% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #f472b6 50%, #1e3a8a 100%);
-    }
-    25% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #a855f7 50%, #1e40af 100%);
-    }
-    30% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #b794f4 50%, #3b82f6 100%);
-    }
-    35% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #d946ef 50%, #1d4ed8 100%);
-    }
-    40% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #ec4899 50%, #1e3a8a 100%);
-    }
-    45% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #f472b6 50%, #1e40af 100%);
-    }
-    50% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #a855f7 50%, #3b82f6 100%);
-    }
-    55% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #b794f4 50%, #1d4ed8 100%);
-    }
-    60% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #d946ef 50%, #1e3a8a 100%);
-    }
-    65% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #ec4899 50%, #1e40af 100%);
-    }
-    70% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #f472b6 50%, #3b82f6 100%);
-    }
-    75% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #a855f7 50%, #1d4ed8 100%);
-    }
-    80% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #b794f4 50%, #1e3a8a 100%);
-    }
-    85% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #d946ef 50%, #1e40af 100%);
-    }
-    90% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #ec4899 50%, #3b82f6 100%);
-    }
-    95% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #f472b6 50%, #1d4ed8 100%);
-    }
-    100% {
-        background: radial-gradient(circle at 50% 30%, #fff 0%, #a855f7 50%, #1e3a8a 100%);
-    }
-}
 .home-title{
     color: #fff;
     text-align: center;
@@ -130,4 +25,10 @@
 .home-title p{
     font-size: 18px;
 
+}
+@media (max-width: 768px) {
+  svg {
+    width: 400px;
+    left: 10%;
+  }
 }

@@ -16,12 +16,12 @@
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 20px;
-    height: 600px;
-    width: 40%;
+  height: 600px;
+  width: 40%;
 }
 
 .chart .bar {
-     width: 126px;
+  width: 126px;
   background: #5F00FF;
   border-radius: 12px;
   position: relative;
@@ -29,11 +29,16 @@
   align-items: flex-end;
   justify-content: center;
   color: white;
+  height: 0%;
+  transition: height 1.5s ease-in-out;
+}   
+.chart .bar.animate {
+  height: var(--target-height);
 }
 
 .chart .bar span {
   position: absolute;
-  top:  -45px;
+  top: -45px;
   font-size: 12px;
   text-align: center;
 }
@@ -43,31 +48,36 @@
   gap: 24px;
   margin-bottom: 20px;
 }
-.stat-item{
-    display: flex;
-    align-items: center;
-    width: 200px;
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  width: 200px;
 }
-.stat-item span{
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 8px;
-    color: rgba(255, 255, 255, 0.75);
+
+.stat-item span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 8px;
+  color: rgba(255, 255, 255, 0.75);
 }
+
 .stat-item strong {
   font-size: 58px;
   display: block;
 }
-.description p{ 
+
+.description p {
   font-size: 24px;
   line-height: 197%;
   color: rgba(255, 255, 255, 0.75);
+}
 
+.description .active {
+  font-size: 24px;
+  color: #fff;
 }
-.description .active{
-    font-size: 24px;
-    color: #fff;
-}
+
 .cta-button {
   margin-top: 16px;
   padding: 10px 20px;
@@ -76,10 +86,9 @@
   color: white;
   border: none;
   cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
 }
+
 .cta-button:hover {
-    transform: scale(1.05);
-
-
+  transform: scale(1.05);
 }
