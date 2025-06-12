@@ -1,11 +1,11 @@
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #9333ea;
-  border-radius: 50%;
+.circle {
+  --circle-size: 40px;
   position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 1px solid white;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: transform 0.1s ease;
 }

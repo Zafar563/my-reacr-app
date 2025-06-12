@@ -1,34 +1,64 @@
+@font-face {
+  font-display: block;
+  font-family: Mori;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://assets.codepen.io/16327/PPMori-SemiBold.woff) format("woff");
+}
 .wrapper {
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
 }
 
-.home-title{
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
 
+.home-title {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.home-title h4{
-    font-size: 22px;
-}
-.home-title h1{
-    font-size: 58px;
-    font-weight: 500;
-    margin: 10px 0;
-}
-.home-title p{
-    font-size: 18px;
 
+.home-title h4,
+.home-title h1,
+.home-title p {
+  will-change: transform;
+  font-kerning: none;
+  -webkit-prevent-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 0; /* Boshlang'ich holatda ko'rinmas */
 }
+
+.home-title h4 {
+  font-size: 22px;
+}
+
+.home-title h1 {
+  font-size: 58px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.home-title p {
+  font-size: 18px;
+}
+
+
 @media (max-width: 768px) {
   svg {
     width: 400px;
     left: 10%;
+  }
+  .home-title h1 {
+    font-size: 36px;
+  }
+  .home-title h4 {
+    font-size: 18px;
+  }
+  .home-title p {
+    font-size: 16px;
   }
 }
