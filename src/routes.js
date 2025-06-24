@@ -25,6 +25,7 @@ let routes = [
         path: '/about',
         component: About
     }, 
+    
    
     
 ]

@@ -40,7 +40,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <hr />
-        <p>©solve. all right reserve</p>
+        <p>©SOLVE</p>
       </div>
     </footer>
   );
